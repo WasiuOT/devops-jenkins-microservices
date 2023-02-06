@@ -15,7 +15,17 @@
 			steps {
 				echo "Integration Test"
 			}
-		}	
+		}
+	} post {
+		always {
+			echo "I'm awesome"
+		}
+		success {
+			echo "I run when you are successful"
+		}
+		failure {
+			echo "I run when there is failure"
+		}
 	}
 }
 
